@@ -37,13 +37,13 @@ const ToyDetailsCard = ({ toy }) => {
 
 
     return (
-        <div className="max-w-6xl mx-auto p-6 md:flex gap-10 mt-10 bg-white rounded-3xl shadow-lg">
+        <div className="max-w-6xl mx-auto p-6 md:flex gap-10 mt-10 bg-base-200 rounded-3xl shadow-lg">
             {/* LEFT: IMAGE */}
             <div className="md:w-1/2 flex justify-center items-start">
                 <img
                     src={pictureURL}
                     alt={toyName}
-                    className="w-80 h-80 object-contain rounded-2xl border p-4"
+                    className="w-80 h-80 object-contain p-4"
                 />
             </div>
 
@@ -69,7 +69,7 @@ const ToyDetailsCard = ({ toy }) => {
                 </div>
 
                 {/* Seller Info */}
-                <div className="border p-3 rounded-lg flex items-center justify-between bg-gray-50 space-y-2">
+                <div className=" flex items-center justify-between bg-gray-50 space-y-2">
                     <div>
                         <p className="text-gray-800 font-semibold">Seller: {sellerName}</p>
                         <p className="text-gray-800 font-semibold">Email: {sellerEmail}</p>
@@ -107,7 +107,7 @@ const ToyDetailsCard = ({ toy }) => {
                 </div> */}
 
                 {/* Try Now In-Store Form */}
-                <div className="border p-5 rounded-2xl bg-gray-50 mt-8">
+                <div className=" p-5 rounded-2xl bg-base-300 mt-8">
                     <h3 className="text-lg font-semibold mb-3 text-gray-800">
                         Try Now In–Store!
                     </h3>
@@ -121,14 +121,14 @@ const ToyDetailsCard = ({ toy }) => {
                                 type="text"
                                 name="name"
                                 placeholder="Your Name"
-                                className="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#00A97F] outline-none"
+                                className="w-full bg-base-100 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#00A97F] outline-none"
                                 required
                             />
                             <input
                                 type="email"
                                 name="email"
                                 placeholder="your_email@example.com"
-                                className="w-full border rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#00A97F] outline-none"
+                                className="w-full bg-base-100 rounded-lg px-3 py-2 focus:ring-2 focus:ring-[#00A97F] outline-none"
                                 required
                             />
                         </div>

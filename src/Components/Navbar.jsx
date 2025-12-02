@@ -37,18 +37,22 @@ const Navbar = () => {
                 }`
             }>
             Shop</NavLink>
-        <NavLink to={'/review'}
-            className={({ isActive }) =>
-                `ml-3 px-3 py-2 rounded-md font-semibold transition-colors duration-200 ${isActive ? "text-white bg-orange-500" : "text-gray-700 hover:text-orange-500"
-                }`
-            }>
-            Review</NavLink>
-        <NavLink to={'/profile'}
-            className={({ isActive }) =>
-                `ml-3 px-3 py-2 rounded-md font-semibold transition-colors duration-200 ${isActive ? "text-white bg-orange-500" : "text-gray-700 hover:text-orange-500"
-                }`
-            }>
-            My Profile</NavLink>
+        {user && (
+            <>
+                <NavLink to={'/review'}
+                    className={({ isActive }) =>
+                        `ml-3 px-3 py-2 rounded-md font-semibold transition-colors duration-200 ${isActive ? "text-white bg-orange-500" : "text-gray-700 hover:text-orange-500"
+                        }`
+                    }>
+                    Review</NavLink>
+                <NavLink to={'/profile'}
+                    className={({ isActive }) =>
+                        `ml-3 px-3 py-2 rounded-md font-semibold transition-colors duration-200 ${isActive ? "text-white bg-orange-500" : "text-gray-700 hover:text-orange-500"
+                        }`
+                    }>
+                    My Profile</NavLink>
+            </>
+        )}
     </>
 
     return (

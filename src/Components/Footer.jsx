@@ -17,32 +17,32 @@ const Footer = () => {
                     <div>
                         <h3 className="font-bold mb-4">Explore</h3>
                         <ul className="space-y-2 text-sm">
-                            <li><Link to={'/'} className="hover:text-primary" href="#">Home</Link></li>
-                            <li><Link to={'/allToys'} className="hover:text-primary" href="#">Shop</Link></li>
-                            <li><Link to={'/review'} className="hover:text-primary" href="#">Review</Link></li>
+                            <li><Link to={'/'} className="hover:text-orange-500" >Home</Link></li>
+                            <li><Link to={'/allToys'} className="hover:text-orange-500" >Shop</Link></li>
+                            <li><Link to={'/review'} className="hover:text-orange-500" >Review</Link></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="font-bold mb-4">Support</h3>
                         <ul className="space-y-2 text-sm">
-                            <li><Link to={'/contactUs'} className="hover:text-primary">Contact Us</Link></li>
-                            <li><Link to={'/faq'} className="hover:text-primary">FAQ</Link></li>
+                            <li><Link to={'/contactUs'} className="hover:text-orange-500">Contact Us</Link></li>
+                            <li><Link to={'/faq'} className="hover:text-orange-500">FAQ</Link></li>
                         </ul>
                     </div>
                     <div>
                         <h3 className="font-bold mb-4">Legal</h3>
                         <ul className="space-y-2 text-sm">
-                            <li><Link to={'/terms'} className="hover:text-primary">Terms of Service</Link></li>
-                            <li><Link to={'/policy'} className="hover:text-primary">Privacy Policy</Link></li>
+                            <li><Link to={'/terms'} className="hover:text-orange-500">Terms of Service</Link></li>
+                            <li><Link to={'/policy'} className="hover:text-orange-500">Privacy Policy</Link></li>
                         </ul>
                     </div>
                 </div>
                 <div className="border-t border-text-light/20 dark:border-text-dark/20 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-text-light/70 dark:text-text-dark/70">
                     <p>© 2024 Playora. All rights reserved.</p>
                     <div className="flex gap-4 mt-4 md:mt-0">
-                        <Link target='_blank' to={'https://github.com/tasnim-88'} className="hover:text-primary"><FaGithub size={24}/></Link>
-                        <Link target='_blank' to={'https://www.facebook.com/tasnim.mahmud.37/'} className="hover:text-primary"><FaFacebook size={24}/></Link>
-                        <Link to={'https://www.instagram.com/'} target='_blank' className="hover:text-primary" ><FaInstagram size={24}/></Link>
+                        <Link target='_blank' to={'https://github.com/tasnim-88'} className="hover:text-primary"><FaGithub size={24} /></Link>
+                        <Link target='_blank' to={'https://www.facebook.com/tasnim.mahmud.37/'} className="hover:text-primary"><FaFacebook size={24} /></Link>
+                        <Link to={'https://www.instagram.com/'} target='_blank' className="hover:text-primary" ><FaInstagram size={24} /></Link>
                     </div>
                 </div>
             </div>

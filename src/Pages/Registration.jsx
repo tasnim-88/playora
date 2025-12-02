@@ -98,25 +98,25 @@ const Registration = () => {
             <div className='flex justify-center items-center md:w-[50%] shadow-2xl rounded-2xl'>
                 
                 <div className='w-[400px] md:w-[500px] py-3'>
-                    <div className="card bg-base-100  ">
+                    <div className="card   ">
                         <form onSubmit={handleRegister} className="card-body p-10">
                             <h1 className='text-2xl text-center font-bold'>Register your account</h1>
                             <hr className="border-gray-300 mt-4 w-[95%] mx-auto" />
                             <fieldset className="fieldset  ">
                                 <label className="label font-bold">Your Name</label>
-                                <input type="text" name="name" id="" placeholder='Enter your name' className='input bg-base-200 w-full' required />
+                                <input type="text" name="name" id="" placeholder='Enter your name' className='input bg-base-100 text-gray-400 w-full' required />
 
                                 <label className="label font-bold">Photo Url</label>
-                                <input type="url" name="photo" id="" className="input bg-base-200 w-full" placeholder='Enter url' required />
+                                <input type="url" name="photo" id="" className="input bg-base-100 text-gray-400 w-full" placeholder='Enter url' required />
 
                                 <label className="label font-bold">Email Address</label>
-                                <input name='email' type="email" className="input bg-base-200 w-full" placeholder="Enter your email address" required />
+                                <input name='email' type="email" className="input bg-base-100 text-gray-400 w-full" placeholder="Enter your email address" required />
 
                                 <label className="label font-bold">Password</label>
                                 <div className='relative'>
                                     <input name='password'
                                         type={showPassword ? "text" : "password"}
-                                        className="input bg-base-200 w-full" placeholder="Enter your password" required />
+                                        className="input bg-base-100 text-gray-400 w-full" placeholder="Enter your password" required />
                                     <button onClick={handleToggleShow} className=" absolute top-3 right-7 z-10">{showPassword ? <FaRegEyeSlash size={20} /> : <FaRegEye size={20} />}</button>
                                 </div>
 
@@ -124,7 +124,7 @@ const Registration = () => {
                                     <p className="text-red-500 text-sm mt-2">{error}</p>
                                 )} */}
 
-                                <button type='submit' className="btn btn-primary mt-4">Register</button>
+                                <button type='submit' className="btn bg-[#F97316] hover:bg-[#ea580c] text-white font-medium mt-4">Register</button>
                                 <div className="divider">OR Continue With</div>
                                 <button onClick={handleGoogleLogin} className="btn bg-white text-black border-[#e5e5e5]">
                                     <FcGoogle size={24}></FcGoogle>

@@ -68,20 +68,20 @@ const Login = () => {
             <div className='flex justify-center items-center shadow-2xl rounded-2xl md:w-[50%]'>
                 
                 <div className='w-[350px] h-fit py-3'>
-                    <div className="card bg-base-100 w-full max-w-sm ">
+                    <div className="card  w-full max-w-sm ">
                         <form onSubmit={handleLogin} className="card-body">
                             <h1 className='text-2xl text-center font-bold'>Login your account</h1>
                             <hr className="border-gray-300 mt-4 w-[95%] mx-auto" />
                             <fieldset className="fieldset py-5">
                                 <label className="label font-bold">Email Address</label>
                                 <input
-                                    onChange={(e) => setEmail(e.target.value)} name='email' type="email" className="input bg-base-200" placeholder="Enter your email address" required />
+                                    onChange={(e) => setEmail(e.target.value)} name='email' type="email" className="input bg-base-100 text-gray-400" placeholder="Enter your email address" required />
 
                                 <label className="label font-bold">Password</label>
                                 <div className='relative'>
                                     <input name='password'
                                         type={showPassword ? "text" : "password"}
-                                        className="input bg-base-200" placeholder="Enter your password" required />
+                                        className="input bg-base-100 text-gray-400" placeholder="Enter your password" required />
                                     <button onClick={handleToggleShow} className=" absolute top-3 right-7 z-10">{showPassword ? <FaRegEyeSlash size={20}/> : <FaRegEye size={20}/>}</button>
                                 </div>
 
@@ -92,7 +92,7 @@ const Login = () => {
                                     error && <p className='text-red-700'>{error}</p>
                                 }
 
-                                <button type='submit' className="btn btn-primary mt-4">Login</button>
+                                <button type='submit' className="btn bg-[#F97316] hover:bg-[#ea580c] text-white font-medium mt-4">Login</button>
                                 <div className="divider">OR Continue With</div>
 
                                 <button

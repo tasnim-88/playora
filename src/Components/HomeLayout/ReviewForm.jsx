@@ -41,7 +41,7 @@ const ReviewForm = () => {
             <header >
                 <Navbar></Navbar>
             </header>
-            <form onSubmit={handleReview} className="max-w-3xl mx-auto bg-white rounded-2xl shadow-md p-6 mt-10 border">
+            <form onSubmit={handleReview} className="max-w-3xl mx-auto bg-white rounded-2xl shadow-md p-6 mt-10">
                 <div className="flex items-center gap-3 mb-3">
                     <img
                         src="https://img.icons8.com/?size=60&id=nCw0587tiM_W&format=png"
@@ -95,7 +95,7 @@ const ReviewForm = () => {
                         required
                         type="text"
                         placeholder="e.g. Endless hours of fun!"
-                        className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                        className="w-full bg-base-300 text-gray-400 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400"
                     />
                 </div>
 
@@ -107,7 +107,7 @@ const ReviewForm = () => {
                         required
                         placeholder="What did your child like most?"
                         maxLength={500}
-                        className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400 h-28"
+                        className="w-full bg-base-300 text-gray-400 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-400 h-28"
                     />
                     <p className="text-right text-xs text-gray-400 mt-1">0/500</p>
                 </div>
