@@ -53,6 +53,18 @@ const Navbar = () => {
                     My Profile</NavLink>
             </>
         )}
+        <NavLink to={'/contactUs'}
+            className={({ isActive }) =>
+                `ml-3 px-3 py-2 rounded-md font-semibold transition-colors duration-200 ${isActive ? "text-white bg-orange-500" : "text-gray-700 hover:text-orange-500"
+                }`
+            }>
+            Contact Us</NavLink>
+        <NavLink to={'/faq'}
+            className={({ isActive }) =>
+                `ml-3 px-3 py-2 rounded-md font-semibold transition-colors duration-200 ${isActive ? "text-white bg-orange-500" : "text-gray-700 hover:text-orange-500"
+                }`
+            }>
+            FAQ</NavLink>
     </>
 
     return (
@@ -81,8 +93,10 @@ const Navbar = () => {
             <div className="navbar-end flex gap-2">
                 <img title={user?.displayName} className='w-10 rounded-full' src={`${user && user.photoURL}`} alt="" />
                 {
-                    user ? <Link onClick={handleLogout} className='btn rounded-full bg-[#F97316] hover:bg-[#ea580c] text-white font-medium'>LogOut</Link>
-                        : <Link to={'/auth/login'} className="btn rounded-full bg-[#F97316] hover:bg-[#ea580c] text-white font-medium">LogIn</Link>
+                    user ?
+                        <Link onClick={handleLogout} className='btn rounded-full bg-[#F97316] hover:bg-[#ea580c] text-white font-medium'>LogOut</Link>
+                        :
+                        <Link to={'/auth/login'} className="btn rounded-full bg-[#F97316] hover:bg-[#ea580c] text-white font-medium">LogIn</Link>
                 }
 
             </div>

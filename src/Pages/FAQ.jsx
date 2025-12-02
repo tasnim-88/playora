@@ -4,6 +4,7 @@ import Footer from '../Components/Footer';
 import { FaQuestionCircle } from 'react-icons/fa';
 import useToys from '../Hooks/useToys';
 import Loading from './Loading';
+import { Link } from 'react-router';
 
 const FAQ = () => {
 
@@ -100,12 +101,12 @@ const FAQ = () => {
                     <div className="mt-10 text-center">
                         <p className="text-gray-700">
                             Still have questions?{" "}
-                            <a
-                                href="mailto:support@playora.com"
+                            <Link
+                                to={'/contactUs'}
                                 className="text-[#FF8A00] font-semibold hover:underline"
                             >
                                 Contact us
-                            </a>{" "}
+                            </Link>{" "}
                             and we’ll be happy to help!
                         </p>
                     </div>

@@ -40,8 +40,8 @@ const MyProfile = () => {
                 <Navbar />
             </header>
 
-            <main className="max-w-9/12 mx-auto mt-10">
-                <div className="min-h-screen bg-base-300 flex flex-col items-center justify-center p-6">
+            <main className="max-w-8/12 mx-auto mt-10">
+                <div className="min-h-screen bg-base-300 flex flex-col items-center justify-center p-6 rounded-2xl">
                     <h1 className="text-2xl font-bold mb-8">My Profile</h1>
 
                     {/* Profile Info */}
