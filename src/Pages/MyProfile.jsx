@@ -36,7 +36,7 @@ const MyProfile = () => {
     return (
         <div>
             <title>{name}</title>
-            <header>
+            <header className='sticky top-0 z-50'>
                 <Navbar />
             </header>
 

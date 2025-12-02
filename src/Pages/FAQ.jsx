@@ -65,7 +65,7 @@ const FAQ = () => {
     return (
         <div>
             <title>FAQ</title>
-            <header >
+            <header className='sticky top-0 z-50'>
                 <Navbar></Navbar>
             </header>
             <div className="max-w-6xl mx-auto px-4 py-10">

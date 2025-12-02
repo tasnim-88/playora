@@ -6,7 +6,7 @@ import Footer from '../Components/Footer';
 const Error = () => {
     return (
         <div>
-            <header >
+            <header className='sticky top-0 z-50'>
                 <Navbar></Navbar>
             </header>
             <div className="min-h-screen flex flex-col items-center justify-center bg-[#FFF9F4] px-4 text-center">

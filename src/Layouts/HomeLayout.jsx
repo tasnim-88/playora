@@ -8,6 +8,7 @@ import Sellers from '../Components/HomeLayout/Sellers';
 import Community from '../Components/HomeLayout/Community';
 import useToys from '../Hooks/useToys';
 import Loading from '../Pages/Loading';
+import Home from '../Pages/Home';
 
 const HomeLayout = () => {
 
@@ -19,18 +20,7 @@ const HomeLayout = () => {
 
     return (
         <div className=''>
-            <header >
-                <Navbar></Navbar>
-                <Banner></Banner>
-            </header>
-            <main className='max-w-11/12 mx-auto mt-10'>
-                <PopularToys></PopularToys>
-                <Sellers></Sellers>
-                <Community></Community>
-            </main>
-            <footer className='bg-orange-100'>
-                <Footer></Footer>
-            </footer>
+            <Home></Home>
         </div>
     );
 };

@@ -32,7 +32,7 @@ const ContactUs = () => {
     return (
         <div>
             <title>Contact Us</title>
-            <header >
+            <header className="sticky top-0 z-50">
                 <Navbar></Navbar>
             </header>
 

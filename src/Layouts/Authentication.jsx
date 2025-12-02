@@ -13,7 +13,7 @@ const Authentication = () => {
     }
     return (
         <div>
-            <header className=''>
+            <header className='sticky top-0 z-50'>
                 <Navbar></Navbar>
             </header>
             <main className='max-w-11/12 mx-auto mt-5'>

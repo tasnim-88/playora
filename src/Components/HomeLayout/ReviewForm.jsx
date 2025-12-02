@@ -38,7 +38,7 @@ const ReviewForm = () => {
     return (
         <div>
             <title>Review</title>
-            <header >
+            <header className='sticky top-0 z-50'>
                 <Navbar></Navbar>
             </header>
             <form onSubmit={handleReview} className="max-w-3xl mx-auto bg-white rounded-2xl shadow-md p-6 mt-10">

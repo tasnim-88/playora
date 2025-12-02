@@ -34,7 +34,7 @@ const ForgotPassword = () => {
     return (
         <div>
             <title>Reset Password</title>
-            <header >
+            <header className='sticky top-0 z-50'>
                 <Navbar></Navbar>
             </header>
             <div className="min-h-screen flex items-center justify-center bg-[#FFF9F4] px-4">

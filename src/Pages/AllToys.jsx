@@ -9,7 +9,7 @@ const AllToys = () => {
     return (
         <div>
             <title>Shop</title>
-            <header className=''>
+            <header className='sticky top-0 z-50'>
                 <Navbar></Navbar>
             </header>
             <div className='max-w-11/12 mx-auto mt-10 grid grid-cols-1 md:grid-cols-3 gap-5 px-5 md:px-0'>
